@@ -19,6 +19,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @if(isset($user))
                         @foreach($user as $d)
                         <tr>
                             <td>{{ $d->id }}</td>
@@ -27,6 +28,7 @@
                             <td>{{ $d->password }}</td>
                         </tr>
                         @endforeach
+                        @endif
                     </tbody>
                 </table>
 
